@@ -1,12 +1,11 @@
 
 public class TSIIM {
-
-	/**
-	 * @param args
-	 */
+	
+	private static HttpServer httpserver;
+	private static Serveur serv;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello World");
+		httpserver = new HttpServer();
+		serv = new Serveur(httpserver);
+		HttpServer.addMessage("Patate");
 	}
-
 }
